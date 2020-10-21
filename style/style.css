@@ -101,15 +101,14 @@ body {
     margin-left: 100px;
     margin-top: 70px;
 }
-
+@media screen and (max-width: 880px){
+    .words-content{
+        margin-left: 40px;
+    }
+}
 
 .img {
     overflow: hidden; 
-}
-@media screen and (max-width: 880px){
-    .img{
-        min-height: 50vh;
-    }
 }
 
 .img-img {
@@ -118,6 +117,15 @@ body {
     width: 125%;
 }
 
+@media screen and (max-width: 880px){
+    .img{
+        min-height: 40vh;
+        width: 100%;
+    }
+    .img-img{
+        margin-top: 30px;
+    }
+}
 
 .heading {
     font-size: 1.2rem;
