@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+.logo,
+.navbar {
+    margin-top: 20px;
+}
+
+.nav {
+    height: 10vh;
+    display: flex;
+    padding: 0px 100px 0px;
+
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-right: 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: .8rem;
+    margin-left: 40px;
+    color: black;
+    font-weight: bold;
+}
+
+#login {
+    color: grey;
+}
+
+#login:hover {
+    border-bottom: 2px solid gray;
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid black;
+    transition: all 0.5s ease-in-out;
+    padding: 2px;
+}
+
+.hamburger{
+    margin-top: 30px;
+    display: none;
+}
+
+@media screen and (max-width: 880px){
+    .hamburger{
+        display: inline;
+        margin-left: auto;
+    }
+}
+@media screen and (max-width: 880px){
+    .nav{
+        padding: 0px 50px 0px;
+    }
+    .navbar{    
+        display: none;
+    }
+}
+
+
+.container {
+    height: 100vh;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+    height: 90vh;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+@media screen and (max-width: 880px){
+    .content-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.words{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+
+.words-content {
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+
+.img {
+    overflow: hidden; 
+}
+@media screen and (max-width: 880px){
+    .img{
+        min-height: 50vh;
+    }
+}
+
+.img-img {
+    margin-top: 70px;
+    margin-left: 10%;
+    width: 125%;
+}
+
+
+.heading {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.project {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 60px;
+}
+
+.first-btn {
+    border-style: none;
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    background: hsl(0, 100%, 68%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.first-btn:hover {
+    background: #ff8584;
+}
+
+.second-btn {
+    border-style: none;
+    background: none;
+    width: 30%;
+    height: 40px;
+    font-weight: lighter;
+    color: gray;
+    cursor: pointer;
+}

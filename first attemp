@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="/style/style.css">
+  <link href="https://fonts.google.com/specimen/Barlow+Condensed" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Barlow">
+  <title>Project Tracking</title>
+
+</head>
+
+<body>
+  <div class="bod">
+      <div class="nav">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="site logo">
+        </div>
+        <div class="navbar">
+          <ul>
+            <li><a href="">PRODUCT</a></li>
+            <li><a href="">FEATURES</a></li>
+            <li><a href="">PRICING</a></li>
+            <li><div id="dot"></div></li>
+            <li><a href="" id="login" >LOGIN</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="background">
+
+      </div>
+
+      <div class="content">
+        <div class="content-data">
+
+          <div class="new"> 
+            <p class="new-icon">NEW</p>
+            <p>MONOGRAPH DASHBOARD</p>
+          </div>
+          <div class="power">
+            <h3>POWERFUL INSIGHTS INTO YOUR TEAM</h3>
+          </div>
+          <div class="project">
+            <p>Project planning and time tracking<br> for agile teams</p>
+          </div>
+          <div>
+            <button class="btn">SCHEDULE A DEMO</button>
+            <a href="#" class="preview">TO SEE A PREVIEW</a>
+          </div>
+
+        </div>
+        
+          <picture class="content-img"> 
+            <img src="./images/illustration-devices.svg" alt="device illustration">
+          </picture>
+      </div>
+  </div>
+
+  <!-- Product
+  Features
+  Pricing
+  Login
+
+  New
+  Monograph Dashboard
+
+  Powerful insights into your team
+  Project planning and time tracking for agile teams
+
+  Schedule a demo
+  to see a live preview
+   -->
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Khalid Salman-Yusuf</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
+
+
+css starts here
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Barlow", sans-serif;
+}
+
+
+.attribution { 
+    font-size: 15px; text-align: center;
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+}
+
+.nav{
+    display: flex;
+    margin: 0px 100px 60px; 
+    padding-top: 40px;
+    /* background: gray; */
+}
+.navbar{
+    margin-left: auto;
+    display: flex;
+}
+@media screen and (max-width: 880px){
+    .nav{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .navbar{
+        display: none;
+    }
+}
+.navbar ul{
+    display: flex; 
+    list-style: none;
+}
+.navbar ul li{
+    margin-right: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: .8rem;
+    margin-left: 40px;
+    color: black;
+    font-weight: bold;
+}
+#dot{
+    width: 10px;
+    background: gray;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left: 20px;
+}
+
+#login{
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .8rem;
+}
+
+.content{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 880px){
+    .content{
+        display: grid;
+        margin-left: 20px;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.content-data{
+    /* width: 45%; */
+    /* background: pink; */
+    padding-top: 20px;
+    background: pink;
+}
+.content-img{
+    min-width: 55%;
+    overflow: hidden;
+    /* background: purple; */
+    background: orange;
+    /* margin-left: 23%; */
+}
+@media screen and (max-width: 880px){
+    .content-img img{
+        width: 150%;
+        
+    }
+}
+
+.new{
+    margin-bottom: 30px;
+    display: flex;
+    font-size: 15px;
+}
+
+.new-icon{
+    margin-right: 10px;
+    background: black;
+    color: white;
+    border-radius: 25px;
+    text-align: center;
+    width: 10%;
+    font-weight: bold;
+    height: 30px;
+}
+
+.power{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bolder;
+}
+
+
+
+.project{
+    font-size: 20px;
+    margin-bottom: 60px;
+    font-size: 20px;
+    color: gray;
+}
+
+.btn{
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+    background: hsl(0, 100%, 68%);
+}
+
+.btn:hover{
+    background: #ff8584;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.preview{
+    text-decoration: none;
+    color: gray;
+    margin-left: 20px;
+}
+
+/* .background{ 
+    background: lightgray;
+    height: 80vh;
+    width: 80%;
+    position: absolute;
+    margin-left: 45%;
+    border-radius: 10%;
+    overflow: hidden;
+    margin-top: -20%;
+    position: inherit;
+} */
+
+
