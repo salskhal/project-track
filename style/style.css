@@ -14,6 +14,11 @@ body {
     background-position-y: -140px;
 }
 
+@media screen and (min-width: 600px) {
+    .wrapper {
+        background: none;
+    }
+}
 
 .nav {
     /* background: pink; */
@@ -80,7 +85,7 @@ body {
 
 @media screen and (min-width: 600px) {
     .img {
-        background: hotpink;
+        /* background: hotpink; */
     }
 }
 
@@ -101,7 +106,7 @@ body {
         grid-column: 1/2;
         padding-left: 100px;
         padding-top: 40px;
-        background: green;
+        /* background: green; */
     }
 }
 
@@ -139,16 +144,44 @@ body {
     .mono {
         font-size: 1.2rem;
     }
-    .power{
+
+    .power {
         font-size: 4rem;
         margin-top: -5px;
     }
-    .project{
+
+    .project {
         font-size: 1.2rem;
         margin-top: -10px;
     }
 }
 
+
+
+.first-btn {
+    border-style: none;
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    background: hsl(0, 100%, 68%);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.first-btn:hover {
+    background: #ff8584;
+}
+
+.second-btn {
+    border-style: none;
+    background: none;
+    width: 30%;
+    height: 40px;
+    font-weight: lighter;
+    color: gray;
+    cursor: pointer;
+}
 /* #overlay {
     position: fixed;
     display: none;
