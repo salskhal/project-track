@@ -1,15 +1,11 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: "Barlow Condensed", sans-serif;
 }
-.nav{
-    /* background: pink; */
-    display: flex;
-    padding: 10px 30px;
-    min-height: 5vh;
-}
-.wrapper{
+
+
+.wrapper {
     background-image: url("../images/background.svg");
     background-repeat: no-repeat;
     background-position: top right;
@@ -17,27 +13,44 @@ body{
     background-position-x: 200px;
     background-position-y: -140px;
 }
-.toggle{
+
+
+.nav {
+    /* background: pink; */
+    display: flex;
+    min-height: 5vh;
+    padding: 20px 30px;
+}
+
+@media screen and (min-width: 600px) {
+    .nav {
+        padding: 20px 100px;
+    }
+}
+
+.toggle {
     display: flex;
     margin-left: auto;
 }
 
-.nav-hamburger{
+.nav-hamburger {
     margin-top: 10px;
     cursor: pointer;
 }
 
 
 
-.nav-link ul{
+.nav-link ul {
     display: flex;
     list-style: none;
 }
 
-.nav-link ul li a{
+.nav-link ul li a {
     text-decoration: none;
     color: black;
     margin-right: 40px;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .nav-link ul li a:hover {
@@ -48,36 +61,60 @@ body{
 
 
 
-.content{
+.content {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
-.img{
+
+@media screen and (min-width: 600px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.img {
     min-height: 45vh;
 }
-.img-img{
+
+@media screen and (min-width: 600px) {
+    .img {
+        background: hotpink;
+    }
+}
+
+.img-img {
     width: 140%;
     margin-top: 50px;
     margin-left: 10px;
 }
 
-.content-word{
+.content-data {
     min-height: 50vh;
+    padding-left: 30px;
+}
+
+@media screen and (min-width: 600px) {
+    .content-data {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        padding-left: 100px;
+        padding-top: 40px;
+        background: green;
+    }
 }
 
 
 
-.mono, .power, .project{
-    margin-left: 40px;
-}
 
-.mono{
+
+.mono {
     font-size: 1.7rem;
     color: gray;
 }
 
-.new{
+.new {
     background: black;
     color: white;
     padding: 2px 10px;
@@ -87,15 +124,30 @@ body{
 }
 
 
-.power{
+.power {
     font-size: 2.7rem;
     font-weight: bold;
 }
-.project{
+
+.project {
     font-size: 1.6rem;
     color: gray;
 }
 
+
+@media screen and (min-width: 600px) {
+    .mono {
+        font-size: 1.2rem;
+    }
+    .power{
+        font-size: 4rem;
+        margin-top: -5px;
+    }
+    .project{
+        font-size: 1.2rem;
+        margin-top: -10px;
+    }
+}
 
 /* #overlay {
     position: fixed;
@@ -113,14 +165,14 @@ body{
 
 
 
-  @media screen and (min-width: 600px){
-    .nav-hamburger{
+@media screen and (min-width: 600px) {
+    .nav-hamburger {
         display: none;
     }
 }
 
-@media screen and (max-width: 600px){
-    .nav-link{
+@media screen and (max-width: 600px) {
+    .nav-link {
         display: none;
-    }  
+    }
 }
