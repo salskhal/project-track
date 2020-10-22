@@ -27,11 +27,7 @@ body{
     cursor: pointer;
 }
 
-@media screen and (min-width: 600px){
-    .nav-hamburger{
-        display: none;
-    }
-}
+
 
 .nav-link ul{
     display: flex;
@@ -50,11 +46,7 @@ body{
     padding: 2px;
 }
 
-@media screen and (max-width: 600px){
-    .nav-link{
-        display: none;
-    }  
-}
+
 
 .content{
     overflow-x: hidden;
@@ -74,12 +66,26 @@ body{
     min-height: 50vh;
 }
 
+
+
 .mono, .power, .project{
     margin-left: 40px;
 }
+
 .mono{
     font-size: 1.7rem;
+    color: gray;
 }
+
+.new{
+    background: black;
+    color: white;
+    padding: 2px 10px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+}
+
 
 .power{
     font-size: 2.7rem;
@@ -87,6 +93,7 @@ body{
 }
 .project{
     font-size: 1.6rem;
+    color: gray;
 }
 
 
@@ -103,3 +110,17 @@ body{
     z-index: 2;
     cursor: pointer;
   } */
+
+
+
+  @media screen and (min-width: 600px){
+    .nav-hamburger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .nav-link{
+        display: none;
+    }  
+}
